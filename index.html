@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>Modern Studio Wnętrz - kuchnie na wymiar z niemieckich mebli, Lubin</title>
-<meta name="description" content="Modern Studio Wnętrz, Lubin, ul. Legnicka 69. Niemieckie meble kuchenne Verle Küchen na wymiar: bezpłatny projekt 3D, pomiar, montaż własną ekipą.">
+<title>Modern Studio Wnętrz - kuchnie Sachsenküchen w Lubinie</title>
+<meta name="description" content="Modern Studio Wnętrz, Lubin, ul. Legnicka 69. Niemieckie kuchnie Sachsenküchen robione na zamówienie w Saksonii: projekt 3D, pomiar i montaż w Lubinie.">
 <meta name="theme-color" content="#0e0e0e">
 <link rel="icon" href="img/m.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/hero.webp" imagesrcset="img/hero-900.webp 900w, img/hero.webp 1680w" imagesizes="100vw">
+<link rel="preload" as="image" href="img/hero.webp" imagesrcset="img/hero-900.webp 900w, img/hero.webp 1920w" imagesizes="100vw">
 <style>
+
 :root{
   --czern:#0e0e0e;      /* tło logo */
   --grafit:#1c1d1f;
@@ -62,14 +63,14 @@ p{margin:0 0 1em}
 /* ===== hero ===== */
 .hero{position:relative;min-height:calc(100svh - var(--hdr));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#2a2b2d}
 .hero-foto{position:absolute;inset:0;margin:0}
-.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
 .hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.72) 0%,rgba(10,10,10,.45) 34%,rgba(10,10,10,0) 62%),linear-gradient(0deg,rgba(10,10,10,.55) 0%,rgba(10,10,10,0) 45%)}
 .hero-in{position:relative;width:var(--w);margin:0 auto;padding:0 0 clamp(48px,9vh,96px)}
 .hero-txt{max-width:680px;position:relative;padding-left:34px}
 /* lewa kreska + przekątna: fragment litery M z logo */
 .hero-txt::before{content:"";position:absolute;left:0;top:46%;bottom:6px;width:1.5px;background:#fff}
 .adres{font-size:15px;color:#e6e7e9;margin:0 0 18px}
-.hero h1{font-size:clamp(40px,4.6vw,66px);font-weight:500;margin:0 0 20px;max-width:15ch}
+.hero h1{font-size:clamp(40px,4.6vw,66px);font-weight:500;margin:0 0 20px;max-width:19ch}
 .lead{font-size:clamp(17px,1.35vw,20px);color:#eceef0;max-width:34em;margin:0 0 32px}
 /* ===== sekcje ===== */
 section{scroll-margin-top:var(--hdr)}
@@ -228,7 +229,7 @@ textarea{min-height:120px;resize:vertical}
   .logo svg{height:24px}
   .hero{flex-direction:column;align-items:stretch;background:#fff;color:var(--tekst)}
   .hero-foto{position:relative;inset:auto;flex:1 1 0;min-height:min(56vw,26svh);max-height:52svh;align-self:stretch;width:100%}
-  .hero-foto img{position:absolute;inset:0;object-position:46% 50%}
+  .hero-foto img{position:absolute;inset:0;object-position:58% 50%}
   .hero-foto::after{background:linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 22%)}
   .hero-in{flex:0 0 auto;width:var(--w);padding:6px 0 max(22px,3.2svh)}
   .hero-txt{padding-left:0}
@@ -269,20 +270,60 @@ textarea{min-height:120px;resize:vertical}
   .lead{font-size:15px;margin-bottom:16px}
   .adres{margin-bottom:6px}
 }
+
+/* ===== wersja Sachsenküchen ===== */
+.kuchnie .kar-tor figure{position:relative}
+.kuchnie figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 28px 22px;background:linear-gradient(0deg,rgba(10,10,10,.72),rgba(10,10,10,0));color:#fff}
+.kuchnie figcaption b{display:block;font:600 20px/1.2 Raleway,sans-serif;letter-spacing:.04em}
+.kuchnie figcaption span{display:block;font-size:15px;color:#e3e5e8;margin-top:4px;max-width:44em}
+.kuchnie .licznik{display:none}
+.fronty{margin-top:56px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px 80px;align-items:start}
+.fronty h3{font-size:26px;font-weight:500;margin-bottom:14px}
+.fronty p{color:var(--szary);margin:0}
+.fronty ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;border-top:1px solid var(--linia)}
+.fronty li{padding:11px 0;border-bottom:1px solid var(--linia);font-size:15px}
+.detale{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.detal figure{margin:0;aspect-ratio:1/1;overflow:hidden;background:#e4e6e9;clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%,0 var(--cut))}
+.detal img{width:100%;height:100%;object-fit:cover}
+.detal h3{margin:20px 0 8px}
+.detal p{margin:0;color:var(--szary);font-size:16px}
+.fakty{list-style:none;margin:0;padding:0;border-top:1px solid #34363a}
+.fakty li{padding:16px 0;border-bottom:1px solid #34363a;display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:4px 24px}
+.fakty b{color:#fff;font:600 17px/1.35 Raleway,sans-serif}
+.fakty span{color:#c3c6ca;font-size:15px}
+.salon{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px 80px;align-items:stretch}
+.salon .mapa{margin:0;height:auto;min-height:440px}
+.salon .opis p{color:var(--szary)}
+.salon dl{margin:28px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 24px}
+.salon dt{color:var(--szary);font-size:15px;padding-top:2px}
+.salon dd{margin:0;font-weight:500}
+.salon dd a{text-decoration:none;border-bottom:1px solid var(--linia)}
+.salon dd a:hover{border-color:var(--czern)}
+@media (max-width:1100px){.detale{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+@media (max-width:960px){.fronty,.salon{grid-template-columns:minmax(0,1fr)}.salon .mapa{min-height:340px}}
+@media (max-width:760px){
+  .kuchnie figcaption{padding:44px 16px 14px}
+  .kuchnie figcaption b{font-size:16px}
+  .kuchnie figcaption span{display:none}
+  .detale{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-right:-16px;padding-right:16px;scrollbar-width:none}
+  .detale::-webkit-scrollbar{display:none}
+  .detal{flex:0 0 78%;scroll-snap-align:start}
+  .fakty li{grid-template-columns:minmax(0,1fr)}
+  .fronty{margin-top:40px}
+  .fronty ul{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}
+  .fronty li{font-size:15px;padding:10px 0}
+}
 </style>
 </head>
 <body>
-
 <header class="hdr">
   <div class="wrap">
-    <a class="logo" href="#start" aria-label="Modern Studio Wnętrz - strona główna">
-      <svg viewBox="0 40 1082 124" role="img" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="9"><path d="M13 98V154M13 50L117 154M141 154V50L78 113"/></g><g fill="currentColor" font-family="Raleway, sans-serif" font-weight="300"><text x="160" y="153" font-size="146" textLength="512" lengthAdjust="spacingAndGlyphs">ODERN</text><text x="716" y="122" font-size="44" textLength="364" lengthAdjust="spacingAndGlyphs">STUDIO WNĘTRZ</text></g></svg>
-    </a>
+    <a class="logo" href="#start" aria-label="Modern Studio Wnętrz - strona główna"><svg viewBox="0 40 1082 124" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="9"><path d="M13 98V154M13 50L117 154M141 154V50L78 113"/></g><g fill="currentColor" font-family="Raleway, sans-serif" font-weight="300"><text x="160" y="153" font-size="146" textLength="512" lengthAdjust="spacingAndGlyphs">ODERN</text><text x="716" y="122" font-size="44" textLength="364" lengthAdjust="spacingAndGlyphs">STUDIO WNĘTRZ</text></g></svg></a>
     <nav class="nav" aria-label="Menu główne">
-      <a href="#uslugi">Od projektu do montażu</a>
-      <a href="#kuchnie">Kuchnie</a>
-      <a href="#meble">Meble</a>
-      <a href="#verle">Verle Küchen</a>
+      <a href="#kolekcje">Kolekcje</a>
+      <a href="#proces">Od projektu do montażu</a>
+      <a href="#dlaczego">Dlaczego Sachsenküchen</a>
+      <a href="#salon">Salon</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
     <a class="tel" href="tel:+48721721541" aria-label="Zadzwoń: 721 721 541"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>721 721 541</span></a>
@@ -290,259 +331,165 @@ textarea{min-height:120px;resize:vertical}
   </div>
 </header>
 <div class="panel" id="panel">
-  <a href="#uslugi">Od projektu do montażu</a>
-  <a href="#kuchnie">Kuchnie</a>
-  <a href="#meble">Meble</a>
-  <a href="#verle">Verle Küchen</a>
+  <a href="#kolekcje">Kolekcje</a>
+  <a href="#proces">Od projektu do montażu</a>
+  <a href="#dlaczego">Dlaczego Sachsenküchen</a>
+  <a href="#salon">Salon</a>
   <a href="#kontakt">Kontakt</a>
-  <a class="btn jasny" href="#kontakt">Umów bezpłatny projekt 3D</a>
+  <a class="btn jasny" href="#kontakt">Umów projekt kuchni</a>
   <p class="pd">ul. Legnicka 69, 59-300 Lubin<br>tel. 721 721 541<br>biuro@modern-studio.pl</p>
 </div>
 
 <main>
 <section class="hero" id="start">
   <figure class="hero-foto">
-    <img src="img/hero.webp" srcset="img/hero-900.webp 900w, img/hero.webp 1680w" sizes="100vw" alt="Kuchnia z wyspą w szarym dekorze betonu i otwartym regałem" width="1680" height="800" fetchpriority="high">
+    <img src="img/hero.webp" srcset="img/hero-900.webp 900w, img/hero.webp 1920w" sizes="100vw" alt="Jasna kuchnia Sachsenküchen z wyspą i ciemnymi szafkami górnymi" width="1920" height="1080" fetchpriority="high">
   </figure>
   <div class="hero-in">
     <div class="hero-txt">
-      <p class="adres">Modern Studio Wnętrz, Lubin, ul. Legnicka 69</p>
-      <h1>Kuchnie na wymiar z niemieckich mebli</h1>
-      <p class="lead">Bezpłatny projekt w 3D, pomiar i montaż własną ekipą. Od pierwszej kreski projektu do gotowej kuchni.</p>
-      <a class="btn jasny" href="#kontakt" id="hero-cta">Umów bezpłatny projekt 3D <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
+      <p class="adres">Modern Studio Wnętrz, kuchnie Sachsenküchen, Lubin</p>
+      <h1>Niemieckie kuchnie, polski montaż</h1>
+      <p class="lead">Kuchnie Sachsenküchen powstają na zamówienie w Saksonii, każda jako pojedynczy egzemplarz. Projekt, pomiar i montaż robimy na miejscu, w Lubinie.</p>
+      <a class="btn jasny" href="#kontakt" id="hero-cta">Umów projekt kuchni <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
     </div>
   </div>
 </section>
 
-<section class="sek" id="uslugi">
-  <div class="wrap usluga">
-    <div class="opis">
-      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
-      <h2>Od projektu do montażu, w jednym studiu</h2>
-      <p>Specjalizujemy się w meblach kuchennych na wymiar, a w ofercie mamy też meble łazienkowe, salonowe i garderoby. Realizujemy zamówienia według gotowych projektów albo projektujemy kuchnię razem z Tobą od podstaw.</p>
-      <p>Do każdej realizacji podchodzimy indywidualnie, żeby dobrać rozwiązanie najlepsze dla Twojego wnętrza. Przejrzysty język projektowania, charakterystyczny design i funkcjonalność na co dzień.</p>
-    </div>
-    <div>
-      <ul class="lista">
-        <li><b>Bezpłatny projekt w 3D</b><span>Widzisz kuchnię, zanim powstanie: układ, fronty, blat i sprzęty.</span></li>
-        <li><b>Pomiar kuchni</b><span>Mierzymy pomieszczenie, żeby projekt pasował do Twojego wnętrza.</span></li>
-        <li><b>Własna ekipa montażowa</b><span>Meble montuje nasza własna ekipa montażowa.</span></li>
-        <li><b>Gwarancja</b><span>Na meble Verle 5-letnia gwarancja producenta.</span></li>
-        <li><b>Obsługa posprzedażowa</b><span>Po zakończeniu prac zawsze możesz zwrócić się do nas po poradę.</span></li>
-        <li><b>Finansowanie</b><span>Zapytaj w studiu o możliwości finansowania zakupu.</span></li>
-      </ul>
-      <div class="agd-info">
-        <svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2.5" width="18" height="21"/><path d="M4 9h18M8 5.8h3"/><circle cx="13" cy="16" r="4"/></svg>
-        <p><strong>Kuchnia razem ze sprzętem AGD?</strong> Transport, wniesienie, montaż i podłączenie sprzętów AGD dostajesz w cenie.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sek jasne kuchnie" id="kuchnie">
+<section class="sek jasne kuchnie" id="kolekcje">
   <div class="wrap sek-glowa">
     <div>
       <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
-      <h2>Kuchnia to nie tylko kuchnia, to przestrzeń życiowa</h2>
+      <h2>Kolekcje Sachsenküchen</h2>
     </div>
-    <p>Każdy żyje inaczej i ma inne wymagania. Tradycyjny, nowoczesny, wiejski styl czy połączenie? Pokażemy Ci kuchnie skomponowane według Twoich życzeń i znajdziemy tę, która pasuje do Twojego stylu życia.</p>
+    <p>Każdą kuchnię składa się z frontów, dekorów i uchwytów dobranych do wnętrza. Poniżej zestawienia z aktualnych kolekcji producenta: nazwy to modele frontów użyte w danej kuchni.</p>
   </div>
-  <div class="kar" data-kar data-licznik>
-    <div class="kar-tor" tabindex="0" aria-label="Galeria kuchni, przesuń w bok">
-      <figure><img src="img/k01.webp" alt="Kuchnia z wyspą w ciemnym dekorze drewna" width="1400" height="842"></figure>
-      <figure><img src="img/k02.webp" alt="Kuchnia z wyspą i kamiennym blatem" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k03.webp" alt="Kuchnia z zielonymi frontami i oknem loftowym" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k04.webp" alt="Biała kuchnia z ciemną ścianą i półkami" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k05.webp" alt="Jasna kuchnia z wyspą i oknem do ogrodu" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k06.webp" alt="Kuchnia z wyspą przy dużych przeszkleniach" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k07.webp" alt="Jasna kuchnia z wyspą i betonowym blatem" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k08.webp" alt="Kuchnia w czerni z jasną wyspą" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k09.webp" alt="Biała kuchnia z wnęką na książki" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k10.webp" alt="Biała kuchnia w stylu klasycznym" width="1400" height="842" loading="lazy"></figure>
-      <figure><img src="img/k11.webp" alt="Kuchnia ze stali i szkła z podświetlaną wyspą" width="1400" height="1002" loading="lazy"></figure>
-      <figure><img src="img/k12.webp" alt="Kuchnia w grafitowych frontach z bordowymi akcentami" width="1400" height="990" loading="lazy"></figure>
-      <figure><img src="img/k13.webp" alt="Kuchnia w dekorze betonu terragrau" width="1400" height="1189" loading="lazy"></figure>
-      <figure><img src="img/k14.webp" alt="Kuchnia z wyspą w drewnie i bieli" width="910" height="590" loading="lazy"></figure>
+  <div class="kar" data-kar>
+    <div class="kar-tor" tabindex="0" aria-label="Kolekcje kuchni, przesuń w bok">
+      <figure><img src="img/c1.webp" alt="Kuchnia EDDA, KIARA i LARA z orzechem i kamienną wyspą" width="1400" height="788"><figcaption><b>EDDA / KIARA / LARA</b><span>Ciepły orzech i czyste linie, szaro-beżowe powierzchnie, uchwyty wpuszczane ze stali i wyspa z kamienia.</span></figcaption></figure>
+      <figure><img src="img/c2.webp" alt="Kuchnia FIORA, STANA i EDDA z wyspą" width="1400" height="788" loading="lazy"><figcaption><b>FIORA / STANA / EDDA</b><span>Matowe fronty w kolorze taupe i drobno fakturowany kamień. W centrum wyspa do gotowania.</span></figcaption></figure>
+      <figure><img src="img/c3.webp" alt="Kuchnia LEONORA i FABIOLA w jasnym drewnie" width="1400" height="788" loading="lazy"><figcaption><b>LEONORA / FABIOLA</b><span>Delikatna drewniana rama z wypełnieniem z linoleum: drewno i kamień w spokojnym zestawieniu.</span></figcaption></figure>
+      <figure><img src="img/c4.webp" alt="Kuchnia SENTA i FABIOLA z wyspą" width="1400" height="788" loading="lazy"><figcaption><b>SENTA / FABIOLA</b><span>Faktury drewna, świeże akcenty koloru i otwarta wyspa do wspólnego gotowania.</span></figcaption></figure>
+      <figure><img src="img/c5.webp" alt="Kuchnia LARA i LANA z widokiem na góry" width="1400" height="788" loading="lazy"><figcaption><b>LARA / LANA</b></figcaption></figure>
+      <figure><img src="img/c6.webp" alt="Kuchnia KARA i FLAVIA z lamelami i marmurem" width="1400" height="788" loading="lazy"><figcaption><b>KARA / FLAVIA</b></figcaption></figure>
+      <figure><img src="img/c7.webp" alt="Kuchnia FABIOLA, LEONA i ADINA z podświetlaną wyspą" width="1400" height="788" loading="lazy"><figcaption><b>FABIOLA / LEONA / ADINA</b></figcaption></figure>
+      <figure><img src="img/c8.webp" alt="Kuchnia LANA, SELMA i FERRA w jasnych frontach" width="1400" height="788" loading="lazy"><figcaption><b>LANA / SELMA / FERRA</b></figcaption></figure>
+      <figure><img src="img/c9.webp" alt="Kuchnia RAJA, LARA i EDDA z wyspą" width="1400" height="788" loading="lazy"><figcaption><b>RAJA / LARA / EDDA</b></figcaption></figure>
+      <figure><img src="img/c10.webp" alt="Zabudowa PATRIZIA i SAMARA z podświetlanymi półkami" width="1400" height="788" loading="lazy"><figcaption><b>PATRIZIA / SAMARA</b></figcaption></figure>
+      <figure><img src="img/c11.webp" alt="Kuchnia SHILA, ALINA i LARA z ciemną wyspą" width="1400" height="788" loading="lazy"><figcaption><b>SHILA / ALINA / LARA</b></figcaption></figure>
     </div>
     <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
     <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
   </div>
   <div class="wrap kar-dol">
-    <p><span data-licz-out>1 / 14</span> &nbsp;Przesuń palcem lub przeciągnij myszą</p>
+    <p><span data-licz-out>1 / 11</span> &nbsp;Przesuń palcem lub przeciągnij myszą</p>
     <div class="strzalki">
-      <button data-kar-cel="kuchnie" data-kier="-1" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-      <button data-kar-cel="kuchnie" data-kier="1" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+      <button data-kar-cel="kolekcje" data-kier="-1" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+      <button data-kar-cel="kolekcje" data-kier="1" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
     </div>
+  </div>
+  <div class="wrap fronty">
+    <div>
+      <h3>Fronty z każdego materiału</h3>
+      <p>Producent ma w ofercie 182 dekory frontów, 44 dekory korpusów, ponad 3000 kolorów lakieru i 117 uchwytów oraz gałek. Ta sama technika sprawdza się też w garderobie, łazience, pomieszczeniu gospodarczym i salonie.</p>
+    </div>
+    <ul aria-label="Rodzaje frontów">
+      <li>Beton i kamień</li><li>Jasne drewno</li><li>Ciemne drewno</li><li>Fornir i lite drewno</li><li>FENIX NTM</li><li>Szkło laminowane</li><li>Ceramika</li><li>Lakier i lakierolaminat</li><li>Linoleum meblowe</li><li>Melamina</li><li>Jasne kolory</li><li>Ciemne kolory</li>
+    </ul>
   </div>
 </section>
 
-<section class="sek" id="meble">
-  <div class="wrap">
-    <div class="sek-glowa">
-      <div>
-        <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
-        <h2>Nie tylko kuchnie</h2>
-      </div>
-      <p>Ten sam projekt, ta sama jakość w całym domu: od przedpokoju i garderoby, przez salon, po łazienkę i pralnię.</p>
-    </div>
-    <div class="karty">
-      <article class="karta">
-        <div class="kar" data-kar data-kropki>
-          <div class="kar-tor" tabindex="0" aria-label="Przedpokój i garderoba, galeria">
-            <img src="img/g1.webp" alt="Garderoba z podświetlanymi półkami" width="900" height="613" loading="lazy">
-            <img src="img/g2.webp" alt="Otwarta garderoba w sypialni" width="900" height="675" loading="lazy">
-            <img src="img/g3.webp" alt="Garderoba z drzwiami przesuwnymi" width="900" height="636" loading="lazy">
-            <img src="img/g4.webp" alt="Przedpokój z szafą i ławką" width="900" height="650" loading="lazy">
-          </div>
-          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        </div>
-        <h3>Przedpokój i garderoba</h3>
-        <p>Wieszaki, szafki na buty, komody i lustra Verle oraz zabudowy z drzwiami przesuwnymi Raumplus, szyte na miarę.</p>
-      </article>
-      <article class="karta">
-        <div class="kar" data-kar data-kropki>
-          <div class="kar-tor" tabindex="0" aria-label="Pokój dzienny, galeria">
-            <img src="img/s1.webp" alt="Salon z zabudową RTV i półkami" width="900" height="636" loading="lazy">
-            <img src="img/s2.webp" alt="Salon z wiszącymi szafkami" width="900" height="636" loading="lazy">
-            <img src="img/s3.webp" alt="Jadalnia i salon z szafkami w drewnie" width="900" height="636" loading="lazy">
-            <img src="img/s4.webp" alt="Salon z zabudową w orzechu" width="900" height="584" loading="lazy">
-          </div>
-          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        </div>
-        <h3>Pokój dzienny</h3>
-        <p>Bogaty wybór frontów i materiałów: barwy, wzory i faktury zestawiasz prawie bez ograniczeń.</p>
-      </article>
-      <article class="karta">
-        <div class="kar" data-kar data-kropki>
-          <div class="kar-tor" tabindex="0" aria-label="Łazienka i pralnia, galeria">
-            <img src="img/l1.webp" alt="Łazienka z szafką pod umywalkę w drewnie" width="900" height="627" loading="lazy">
-            <img src="img/l2.webp" alt="Łazienka z wysokimi szafkami" width="900" height="637" loading="lazy">
-            <img src="img/l3.webp" alt="Łazienka z widokiem do ogrodu" width="900" height="600" loading="lazy">
-            <img src="img/l4.webp" alt="Pralnia z zabudową pralki i suszarki" width="900" height="519" loading="lazy">
-          </div>
-          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        </div>
-        <h3>Łazienka i pralnia</h3>
-        <p>Szafki dopasowane do łazienki każdej wielkości. Nie musi to być klasyczna szafka z umywalką.</p>
-      </article>
-      <article class="karta">
-        <div class="kar" data-kar data-kropki>
-          <div class="kar-tor" tabindex="0" aria-label="Blaty, galeria">
-            <img src="img/b1.webp" alt="Kuchnia z blatem ze spieku kwarcowego" width="900" height="609" loading="lazy">
-            <img src="img/b2.webp" alt="Wyspa z blatem imitującym marmur" width="900" height="601" loading="lazy">
-            <img src="img/b3.webp" alt="Płyta spieku z ciemnym użyleniem" width="900" height="506" loading="lazy">
-          </div>
-          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        </div>
-        <h3>Blaty</h3>
-        <p>Spieki kwarcowe, granity, konglomeraty, Corian, kamień naturalny, laminaty i blaty kompaktowe. Pomożemy dobrać blat odporny i trwały.</p>
-      </article>
-      <article class="karta">
-        <div class="kar" data-kar data-kropki>
-          <div class="kar-tor" tabindex="0" aria-label="Sprzęt AGD, galeria">
-            <img src="img/a1.webp" alt="Kuchnia z piekarnikami w zabudowie" width="720" height="750" loading="lazy">
-            <img src="img/a2.webp" alt="Kuchnia z wyspą i okapem" width="900" height="506" loading="lazy">
-            <img src="img/a3.webp" alt="Okap wyspowy nad blatem" width="900" height="675" loading="lazy">
-          </div>
-          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        </div>
-        <h3>Sprzęt AGD i armatura</h3>
-        <p>Na ekspozycji w studiu sprzęt Siemens z wydłużoną 5-letnią gwarancją bez dopłaty. Sprzęt można też kupić osobno, z transportem i montażem.</p>
-      </article>
-      <article class="karta">
-        <div class="kar" data-kar data-kropki>
-          <div class="kar-tor" tabindex="0" aria-label="Stoły i krzesła, galeria">
-            <img src="img/t1.webp" alt="Jadalnia ze stołem i tapicerowanymi krzesłami" width="900" height="642" loading="lazy">
-            <img src="img/t2.webp" alt="Krzesła tapicerowane przy stole" width="900" height="473" loading="lazy">
-          </div>
-          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
-          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        </div>
-        <h3>Stoły i krzesła</h3>
-        <p>Szeroki wybór do jadalni i kuchni. Wystarczy przyjść do studia i wybrać model, który sprawdzi się u Ciebie w domu.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sek verle" id="verle">
-  <div class="verle-in">
-    <figure class="verle-foto"><img src="img/verle.webp" alt="Salon z meblami Verle i otwartymi półkami" width="1400" height="990" loading="lazy"></figure>
-    <div class="verle-txt">
+<section class="sek" id="proces">
+  <div class="wrap usluga">
+    <div class="opis">
       <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
-      <h2>Verle Küchen, made in Germany</h2>
-      <p>Naszym głównym dostawcą mebli jest Verle Küchen. Meble Verle powstają wyłącznie w niemieckich fabrykach, z wysokim stopniem automatyzacji produkcji. To solidność i jakość, ale też wyszukane dekory, z których powstają oryginalne projekty.</p>
-      <p class="duze">5-letnia gwarancja producenta</p>
-      <ul class="certy">
-        <li>DIN EN ISO 50001 (energia)</li>
-        <li>DIN ISO 9001 (jakość)</li>
-        <li>DIN ISO 14001 (środowisko)</li>
-        <li>Złote M, DGM (GS)</li>
-        <li>PEFC</li>
-        <li>Der Blaue Engel</li>
+      <h2>Od pierwszej kreski do montażu</h2>
+      <p>Kuchnia z Saksonii jest tak dobra, jak jej projekt i montaż. Dlatego cały proces prowadzimy w jednym miejscu: od pierwszego szkicu w salonie przy Legnickiej, przez pomiar u Ciebie, po ostatnią regulację frontów.</p>
+      <p>Fabryka produkuje każdą kuchnię dopiero po zamówieniu, dokładnie według naszego projektu.</p>
+    </div>
+    <div>
+      <ul class="lista">
+        <li><b>Projekt w 3D</b><span>Układ, fronty, blat i sprzęty widzisz na ekranie, zanim cokolwiek zamówimy.</span></li>
+        <li><b>Pomiar</b><span>Mierzymy pomieszczenie, żeby projekt pasował do wnętrza co do szczegółu.</span></li>
+        <li><b>Produkcja w Saksonii</b><span>Zamówienie trafia do fabryki w Obercarsdorf koło Drezna, gdzie kuchnia powstaje jako pojedynczy egzemplarz.</span></li>
+        <li><b>Montaż własną ekipą</b><span>Meble montuje nasza ekipa montażowa.</span></li>
+        <li><b>Opieka po montażu</b><span>Po zakończeniu prac zawsze możesz zwrócić się do nas po poradę.</span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="sek jasne" id="marki">
+<section class="sek jasne" id="detale">
   <div class="wrap">
     <div class="sek-glowa">
       <div>
         <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
-        <h2>Sprzęt i blaty sprawdzonych marek</h2>
+        <h2>To, czego nie widać na pierwszy rzut oka</h2>
       </div>
-      <p>Jeśli potrzebujesz czegoś spoza podstawowego programu, zwykle i tak możemy to dostarczyć. Po prostu zapytaj.</p>
+      <p>To, co wyróżnia kuchnię, wychodzi w codziennym używaniu: przemyślane schowki, precyzyjne mechanizmy i rozwiązania, które po prostu działają.</p>
     </div>
-    <div class="marki">
-      <div class="marka">
-        <h3>AGD i armatura</h3>
-        <p><strong>Siemens</strong> na ekspozycji w studiu, a także Smeg, Samsung, Miele, Bora, Elica, Beko, Falmec, Faber, Franke, Blanco, Hettich, Peka, Häfele, Blum i inne.</p>
-      </div>
-      <div class="marka">
-        <h3>Blaty</h3>
-        <p>Spieki kwarcowe <strong>Dekton, Laminam, Neolith</strong>, granity Sensa, konglomeraty Silestone i Quarcforms, kompozyt Corian, kamienie naturalne, laminaty i blaty kompaktowe.</p>
-      </div>
+    <div class="detale">
+      <article class="detal"><figure><img src="img/d1.webp" alt="Narożnik kuchni z podświetlonym blatem i frontem w drewnie" width="1200" height="634" loading="lazy"></figure><h3>Detale i światło</h3><p>Koncepcja Faceline: wysunięte fronty, uskoki głębokości i ukryte światło LED, nagrodzona German Design Award 2025.</p></article>
+      <article class="detal"><figure><img src="img/d2.webp" alt="Szuflada z organizacją wnętrza" width="1080" height="1080" loading="lazy"></figure><h3>Wnętrza szafek</h3><p>Systemy porządku, które można rozbudowywać modułami i dopasować do sposobu gotowania.</p></article>
+      <article class="detal"><figure><img src="img/d3.webp" alt="Wysuwana szafka cargo z półkami" width="1080" height="1080" loading="lazy"></figure><h3>Mechanizmy</h3><p>Ciche, niezawodne i intuicyjne mechanizmy oraz okucia najwyższej klasy.</p></article>
     </div>
   </div>
 </section>
 
-<section class="sek" id="kontakt">
-  <div class="wrap kontakt">
-    <div class="dane">
+<section class="sek verle" id="dlaczego">
+  <div class="verle-in">
+    <figure class="verle-foto"><img src="img/sax.webp" alt="Skały i lasy Saksonii o wschodzie słońca" width="1600" height="846" loading="lazy"></figure>
+    <div class="verle-txt">
       <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
-      <h2>Umów wizytę w studiu, bez zobowiązań</h2>
-      <p style="color:var(--szary);margin-top:20px">Opisz krótko, co chcesz urządzić. Oddzwonimy i umówimy pomiar albo spotkanie przy projekcie 3D.</p>
+      <h2>Dlaczego Sachsenküchen</h2>
+      <p>Made in Germany, w Saksonii, w zakładzie w Rudawach koło Drezna. Meble powstają tam od 1908 roku, a kuchnie pod nazwą Sachsenküchen od 1920 roku.</p>
+      <ul class="fakty">
+        <li><b>Seria jednej sztuki</b><span>Od 2007 roku producent stawia na produkcję jednostkową: każdy mebel powstaje na nowoczesnych liniach CNC, ale według indywidualnego projektu.</span></li>
+        <li><b>Jakość pod kontrolą</b><span>Regularne audyty IHD Dresden zgodnie z DIN EN ISO 9001.</span></li>
+        <li><b>Neutralny dla klimatu</b><span>Certyfikat producenta neutralnego dla klimatu od DGM. Płyty wiórowe CARB2 z dużym udziałem recyklingu, ogrzewanie zrębką drzewną.</span></li>
+        <li><b>Nagrody</b><span>German Design Award 2025 za koncepcję Faceline i tytuł Qualitätsmarke 2026.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="salon">
+  <div class="wrap salon">
+    <div class="opis">
+      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+      <h2>Salon przy Legnickiej 69</h2>
+      <p style="margin-top:20px">Przyjdź z rzutem mieszkania albo kilkoma wymiarami. Porozmawiamy o układzie, frontach i blatach, a potem przygotujemy projekt kuchni w 3D.</p>
       <dl>
         <dt>Adres</dt><dd>ul. Legnicka 69, 59-300 Lubin</dd>
         <dt>Telefon</dt><dd><a href="tel:+48721721541">721 721 541</a></dd>
         <dt>E-mail</dt><dd><a href="mailto:biuro@modern-studio.pl">biuro@modern-studio.pl</a></dd>
-        <dt>WhatsApp</dt><dd><a href="https://wa.me/48885343333" rel="noopener">885 343 333</a></dd>
         <dt>Facebook</dt><dd><a href="https://www.facebook.com/modernstudiownetrz/" rel="noopener">modernstudiownetrz</a></dd>
       </dl>
+    </div>
+    <div class="mapa"><iframe title="Mapa dojazdu: ul. Legnicka 69, Lubin" src="https://maps.google.com/maps?q=Legnicka%2069,%2059-300%20Lubin&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<section class="sek jasne" id="kontakt">
+  <div class="wrap kontakt">
+    <div class="dane">
+      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+      <h2>Umów projekt kuchni</h2>
+      <p style="color:var(--szary);margin-top:20px">Napisz kilka słów o pomieszczeniu i terminie. Oddzwonimy i umówimy spotkanie w salonie albo pomiar.</p>
     </div>
     <form id="formularz" novalidate>
       <label>Imię<input name="imie" autocomplete="name" placeholder="Jak się do Ciebie zwracać"></label>
       <label>Telefon<input name="tel" type="tel" autocomplete="tel" placeholder="Numer do kontaktu"></label>
       <label class="cala">E-mail<input name="email" type="email" autocomplete="email" placeholder="adres@poczta.pl"></label>
-      <label class="cala">Co urządzamy?
-        <select name="co"><option>Kuchnia</option><option>Przedpokój lub garderoba</option><option>Pokój dzienny</option><option>Łazienka lub pralnia</option><option>Blat lub sprzęt AGD</option><option>Inne</option></select>
+      <label class="cala">Pomieszczenie
+        <select name="co"><option>Kuchnia</option><option>Kuchnia z salonem</option><option>Garderoba</option><option>Łazienka lub pralnia</option><option>Inne</option></select>
       </label>
-      <label class="cala">Wiadomość<textarea name="wiad" placeholder="Wymiary, termin, pomysły. Może być w kilku słowach."></textarea></label>
+      <label class="cala">Wiadomość<textarea name="wiad" placeholder="Wymiary, termin, styl. Może być w kilku słowach."></textarea></label>
       <label class="zgoda"><input type="checkbox" name="zgoda"> <span>Zgadzam się na kontakt w sprawie zapytania. Szczegóły w <a href="polityka.html">polityce prywatności</a>.</span></label>
       <div class="form-dol">
         <button class="btn" type="submit">Wyślij zapytanie <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
         <p class="form-info" id="form-info" aria-live="polite"></p>
       </div>
     </form>
-  </div>
-  <div class="wrap">
-    <div class="mapa"><iframe title="Mapa dojazdu: ul. Legnicka 69, Lubin" src="https://maps.google.com/maps?q=Legnicka%2069,%2059-300%20Lubin&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   </div>
 </section>
 </main>
@@ -552,7 +499,7 @@ textarea{min-height:120px;resize:vertical}
     <div class="stopka-siatka">
       <div>
         <a class="logo" href="#start" aria-label="Modern Studio Wnętrz"><svg viewBox="0 40 1082 124" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="9"><path d="M13 98V154M13 50L117 154M141 154V50L78 113"/></g><g fill="currentColor" font-family="Raleway, sans-serif" font-weight="300"><text x="160" y="153" font-size="146" textLength="512" lengthAdjust="spacingAndGlyphs">ODERN</text><text x="716" y="122" font-size="44" textLength="364" lengthAdjust="spacingAndGlyphs">STUDIO WNĘTRZ</text></g></svg></a>
-        <p>Niemieckie meble na wymiar w Lubinie: kuchnie, garderoby, salony i łazienki.</p>
+        <p>Kuchnie Sachsenküchen w Lubinie: projekt, pomiar i montaż.</p>
       </div>
       <div>
         <h4>Kontakt</h4>
@@ -565,9 +512,9 @@ textarea{min-height:120px;resize:vertical}
       <div>
         <h4>Na stronie</h4>
         <ul>
-          <li><a href="#kuchnie">Kuchnie</a></li>
-          <li><a href="#meble">Meble</a></li>
-          <li><a href="#verle">Verle Küchen</a></li>
+          <li><a href="#kolekcje">Kolekcje</a></li>
+          <li><a href="#proces">Od projektu do montażu</a></li>
+          <li><a href="#salon">Salon</a></li>
           <li><a href="polityka.html">Polityka prywatności</a></li>
           <li><a href="https://www.facebook.com/modernstudiownetrz/" rel="noopener">Facebook</a></li>
         </ul>
@@ -575,7 +522,7 @@ textarea{min-height:120px;resize:vertical}
     </div>
     <div class="stopka-dol">
       <span>© <span id="rok">2026</span> Modern Studio Wnętrz</span>
-      <span class="pg">Podgląd koncepcji, treści i zdjęcia z modern-studio.pl</span>
+      <span class="pg">Podgląd koncepcji. Zdjęcia kuchni: SACHSENKÜCHEN H.-J. Ebert GmbH</span>
       <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=modern-studio.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
     </div>
   </div>
@@ -583,7 +530,7 @@ textarea{min-height:120px;resize:vertical}
 
 <div class="mob" id="mob">
   <a href="tel:+48721721541"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Zadzwoń</a>
-  <a class="gl" href="#kontakt">Bezpłatny projekt 3D</a>
+  <a class="gl" href="#kontakt">Umów projekt kuchni</a>
 </div>
 
 <div class="cookies" id="cookies" hidden role="dialog" aria-label="Pliki cookies">
@@ -601,9 +548,8 @@ textarea{min-height:120px;resize:vertical}
   p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',zamknij)});
   // aktywna pozycja menu
   var linki=[].slice.call(document.querySelectorAll('.nav a,.panel a[href^="#"]:not(.btn)'));
-  var sek=['uslugi','kuchnie','meble','verle','kontakt'].map(function(i){return document.getElementById(i)});
+  var sek=['kolekcje','proces','dlaczego','salon','kontakt'].map(function(i){return document.getElementById(i)});
   function akt(){var y=innerHeight*0.35,cur=null;sek.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=y&&r.bottom>y)cur=s.id});
-    if(cur==null&&document.getElementById('marki').getBoundingClientRect().top<=y&&document.getElementById('kontakt').getBoundingClientRect().top>y)cur='verle';
     linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+cur)})}
   addEventListener('scroll',akt,{passive:true});akt();
   // pasek mobilny po przewinięciu za przycisk w hero
