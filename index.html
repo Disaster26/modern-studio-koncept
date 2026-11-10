@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Modern Studio Wnętrz - kuchnie na wymiar z niemieckich mebli, Lubin</title>
+<meta name="description" content="Modern Studio Wnętrz, Lubin, ul. Legnicka 69. Niemieckie meble kuchenne Verle Küchen na wymiar: bezpłatny projekt 3D, pomiar, montaż własną ekipą.">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="icon" href="img/m.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp" imagesrcset="img/hero-900.webp 900w, img/hero.webp 1680w" imagesizes="100vw">
+<style>
+:root{
+  --czern:#0e0e0e;      /* tło logo */
+  --grafit:#1c1d1f;
+  --tekst:#1f2124;
+  --szary:#5b6067;
+  --linia:#d8dbdf;
+  --jasne:#f1f2f4;
+  --biel:#fff;
+  --hdr:68px;
+  --w:min(1240px,calc(100% - 48px));
+  --cut:22px;           /* ścięcie pod kątem 45° jak przekątna w literze M */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.6 Inter,system-ui,sans-serif;color:var(--tekst);background:var(--biel);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Raleway,Inter,sans-serif;font-weight:500;line-height:1.15;margin:0;font-variant-numeric:lining-nums;letter-spacing:-.01em}
+h2{font-size:clamp(30px,3.4vw,46px)}
+h3{font-size:22px;font-weight:600}
+p{margin:0 0 1em}
+.wrap{width:var(--w);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--czern);color:#fff;text-decoration:none;font:600 16px/1 Inter,sans-serif;padding:18px 26px;border:0;cursor:pointer;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);transition:background .2s}
+.btn:hover{background:#2c2e31}
+.btn.jasny{background:#fff;color:var(--czern)}
+.btn.jasny:hover{background:#e8e9eb}
+.btn svg{width:18px;height:18px;flex:none}
+/* ===== nagłówek ===== */
+.hdr{position:sticky;top:0;z-index:50;height:var(--hdr);background:var(--czern);color:#fff}
+.hdr .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:block;color:#fff;text-decoration:none;flex:none}
+.logo svg{height:30px;width:auto;display:block}
+.nav{display:flex;gap:30px;margin-left:auto}
+.nav a{text-decoration:none;font-size:15px;color:#c9cbcf;padding:6px 0;position:relative}
+.nav a:hover{color:#fff}
+.nav a.akt{color:#fff}
+.nav a.akt::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;background:#fff}
+.tel{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap;border:1px solid #3a3c40;padding:10px 14px}
+.tel:hover{border-color:#fff}
+.tel svg{width:16px;height:16px}
+.burger{display:none;margin-left:auto;width:44px;height:44px;background:none;border:0;color:#fff;cursor:pointer;padding:10px}
+.burger span{display:block;height:1.5px;background:currentColor;margin:6px 0;transition:transform .25s,opacity .2s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.panel{display:none}
+/* ===== hero ===== */
+.hero{position:relative;min-height:calc(100svh - var(--hdr));display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#2a2b2d}
+.hero-foto{position:absolute;inset:0;margin:0}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.72) 0%,rgba(10,10,10,.45) 34%,rgba(10,10,10,0) 62%),linear-gradient(0deg,rgba(10,10,10,.55) 0%,rgba(10,10,10,0) 45%)}
+.hero-in{position:relative;width:var(--w);margin:0 auto;padding:0 0 clamp(48px,9vh,96px)}
+.hero-txt{max-width:680px;position:relative;padding-left:34px}
+/* lewa kreska + przekątna: fragment litery M z logo */
+.hero-txt::before{content:"";position:absolute;left:0;top:46%;bottom:6px;width:1.5px;background:#fff}
+.adres{font-size:15px;color:#e6e7e9;margin:0 0 18px}
+.hero h1{font-size:clamp(40px,4.6vw,66px);font-weight:500;margin:0 0 20px;max-width:15ch}
+.lead{font-size:clamp(17px,1.35vw,20px);color:#eceef0;max-width:34em;margin:0 0 32px}
+/* ===== sekcje ===== */
+section{scroll-margin-top:var(--hdr)}
+.sek{padding:clamp(72px,9vw,128px) 0}
+.sek.jasne{background:var(--jasne)}
+.ciecie{display:flex;align-items:flex-start;height:22px;margin:0 0 34px;width:180px;color:var(--czern)}
+.ciecie i{display:block;height:1.5px;background:currentColor;flex:1}
+.ciecie i:last-child{margin-top:20.5px}
+.ciecie svg{width:22px;height:22px;flex:none}
+.sek-glowa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:48px}
+.sek-glowa p{color:var(--szary);margin:0;max-width:36em}
+/* usługa */
+.usluga{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px 80px;align-items:start}
+.usluga .opis p{color:var(--szary)}
+.usluga .opis h2{margin-bottom:24px}
+.lista{list-style:none;margin:0;padding:0;border-top:1px solid var(--linia)}
+.lista li{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:4px 28px;padding:20px 0;border-bottom:1px solid var(--linia)}
+.lista b{font-family:Raleway,sans-serif;font-weight:600;font-size:19px}
+.lista span{color:var(--szary);font-size:16px}
+.agd-info{margin-top:30px;display:flex;gap:18px;align-items:flex-start;background:var(--jasne);padding:22px 24px;clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%,0 var(--cut))}
+.agd-info svg{width:26px;height:26px;flex:none;margin-top:2px}
+.agd-info p{margin:0;font-size:16px}
+/* ===== karuzele ===== */
+.kar{position:relative}
+.kar-tor{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;overscroll-behavior-x:contain}
+.kar-tor::-webkit-scrollbar{display:none}
+.kar-tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.kar-tor.ciag *{user-select:none}
+.kar-tor > *{scroll-snap-align:start;flex:none}
+.kar-tor img{pointer-events:none;-webkit-user-drag:none}
+.kar-btn{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:0;background:rgba(255,255,255,.94);color:var(--czern);display:grid;place-items:center;cursor:pointer;opacity:0;transition:opacity .2s;z-index:2}
+.kar:hover .kar-btn,.kar-btn:focus-visible{opacity:1}
+.kar-btn[disabled]{opacity:0!important;pointer-events:none}
+.kar-btn.lewo{left:14px}.kar-btn.prawo{right:14px}
+.kar-btn svg{width:20px;height:20px}
+.licznik{position:absolute;right:14px;bottom:14px;background:rgba(14,14,14,.78);color:#fff;font-size:13px;font-weight:500;padding:5px 10px;z-index:2;font-variant-numeric:tabular-nums}
+/* kuchnie - duża galeria */
+.kuchnie .kar-tor{gap:14px}
+.kuchnie .kar-tor figure{margin:0;width:min(78vw,1040px);aspect-ratio:1400/842;background:#e4e6e9;overflow:hidden;clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%,0 var(--cut))}
+.kuchnie .kar-tor figure img{width:100%;height:100%;object-fit:cover}
+.kuchnie .kar{margin-left:max(24px,calc((100% - 1240px)/2))}
+.kar-dol{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:22px}
+.kar-dol p{margin:0;color:var(--szary);font-size:15px}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:52px;height:52px;border:1px solid var(--linia);background:#fff;display:grid;place-items:center;cursor:pointer;color:var(--czern)}
+.strzalki button:hover{border-color:var(--czern)}
+.strzalki button[disabled]{opacity:.35;cursor:default;border-color:var(--linia)}
+.strzalki svg{width:20px;height:20px}
+/* meble - karty z galeriami */
+.karty{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+.karta .kar{clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%,0 var(--cut));background:#e4e6e9}
+.karta .kar-tor > img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.karta h3{margin:20px 0 8px}
+.karta p{margin:0;color:var(--szary);font-size:16px}
+.kropki{position:absolute;left:14px;bottom:14px;display:flex;gap:6px;z-index:2}
+.kropki i{width:7px;height:7px;background:rgba(255,255,255,.55);display:block}
+.kropki i.on{background:#fff}
+/* verle */
+.verle{background:var(--czern);color:#fff;padding:0;overflow:hidden}
+.verle-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:640px}
+.verle-foto{position:relative;margin:0}
+.verle-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.verle-txt{padding:clamp(56px,7vw,110px) clamp(24px,6vw,96px)}
+.verle-txt .ciecie{color:#fff}
+.verle-txt h2{margin-bottom:24px}
+.verle-txt p{color:#c3c6ca;max-width:34em}
+.verle-txt .duze{font-family:Raleway,sans-serif;font-size:22px;color:#fff;font-weight:500;margin:28px 0 30px;padding:18px 0;border-top:1px solid #34363a;border-bottom:1px solid #34363a}
+.certy{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px 28px;font-size:15px;color:#c3c6ca}
+.certy li{padding-left:22px;position:relative}
+.certy li::before{content:"";position:absolute;left:1px;top:.78em;width:13px;height:1.5px;background:#fff;transform:rotate(45deg)}
+/* marki */
+.marki{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.marka{background:#fff;padding:34px clamp(22px,3vw,40px);clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%,0 var(--cut))}
+.marka h3{margin-bottom:12px}
+.marka p{color:var(--szary);font-size:16px}
+.marka p:last-child{margin:0}
+.marka strong{color:var(--tekst);font-weight:600}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px 80px}
+.dane{font-size:17px}
+.dane dl{margin:28px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 24px}
+.dane dt{color:var(--szary);font-size:15px;padding-top:2px}
+.dane dd{margin:0;font-weight:500}
+.dane dd a{text-decoration:none;border-bottom:1px solid var(--linia)}
+.dane dd a:hover{border-color:var(--czern)}
+form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+label{display:grid;gap:7px;font-size:14px;font-weight:500;color:var(--szary)}
+label.cala{grid-column:1/-1}
+input,select,textarea{font:16px/1.4 Inter,sans-serif;color:var(--tekst);border:1px solid #c7cbd0;background:#fff;padding:14px 14px;border-radius:0;width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--czern);outline-offset:-1px;border-color:var(--czern)}
+textarea{min-height:120px;resize:vertical}
+.zgoda{grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px}
+.zgoda input{width:18px;height:18px;margin:2px 0 0;flex:none}
+.form-dol{grid-column:1/-1;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.form-info{font-size:14px;color:var(--szary);margin:0}
+.mapa{margin-top:clamp(56px,7vw,90px);height:420px;background:#e4e6e9;clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%,0 var(--cut))}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+/* stopka */
+.stopka{background:var(--czern);color:#a9adb2;padding:64px 0 28px;font-size:15px}
+.stopka-siatka{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:32px 40px}
+.stopka .logo svg{height:28px}
+.stopka h4{font:600 15px/1.3 Inter,sans-serif;color:#fff;margin:0 0 12px}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka p{margin:14px 0 0}
+.stopka-dol{margin-top:44px;padding-top:22px;border-top:1px solid #2a2c2f;display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;align-items:center}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* pasek mobilny i cookies */
+.mob{display:none}
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;max-width:520px;background:#fff;color:var(--tekst);box-shadow:0 10px 40px rgba(0,0,0,.22);padding:18px 20px;font-size:14px;line-height:1.5}
+.cookies[hidden]{display:none}
+.cookies p{margin:0 0 12px}
+.cookies .pr{display:flex;gap:10px;flex-wrap:wrap}
+.cookies button{font:600 14px/1 Inter,sans-serif;padding:12px 16px;border:1px solid var(--czern);background:var(--czern);color:#fff;cursor:pointer}
+.cookies button.dr{background:#fff;color:var(--czern)}
+.stopka .pg{font-size:13px;color:#7d8187}
+
+/* ===== laptop niski ===== */
+@media (min-width:761px) and (max-height:820px){
+  .hero h1{font-size:clamp(38px,4vw,54px)}
+  .hero-in{padding-bottom:56px}
+  .lead{margin-bottom:26px}
+}
+@media (max-width:1100px){
+  .nav{gap:20px}
+  .karty{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:960px){
+  .nav,.hdr .tel span{display:none}
+  .burger{display:block;margin-left:0}
+  .hdr .tel{margin-left:auto;padding:10px 12px}
+  .panel{display:block;position:fixed;top:var(--hdr);left:0;right:0;bottom:0;background:var(--czern);z-index:49;padding:24px 24px 40px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;overflow-y:auto}
+  .panel.otw{opacity:1;visibility:visible;transform:none}
+  .panel a{display:block;color:#fff;text-decoration:none;font:500 26px/1.3 Raleway,sans-serif;padding:16px 0;border-bottom:1px solid #2a2c2f}
+  .panel a.akt{padding-left:18px;position:relative}
+  .panel a.akt::before{content:"";position:absolute;left:0;top:50%;width:9px;height:1.5px;background:#fff}
+  .panel .btn{margin-top:28px;font:600 16px/1 Inter,sans-serif;padding:18px 24px;border:0;display:inline-flex}
+  .panel .pd{color:#a9adb2;font-size:15px;margin-top:24px;line-height:1.6}
+  .usluga,.kontakt,.sek-glowa{grid-template-columns:minmax(0,1fr)}
+  .verle-in{grid-template-columns:minmax(0,1fr)}
+  .verle-foto{aspect-ratio:16/10}
+}
+@media (max-width:760px){
+  :root{--hdr:60px;--w:calc(100% - 32px);--cut:16px}
+  body{font-size:16px}
+  .logo svg{height:24px}
+  .hero{flex-direction:column;align-items:stretch;background:#fff;color:var(--tekst)}
+  .hero-foto{position:relative;inset:auto;flex:1 1 0;min-height:min(56vw,26svh);max-height:52svh;align-self:stretch;width:100%}
+  .hero-foto img{position:absolute;inset:0;object-position:46% 50%}
+  .hero-foto::after{background:linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 22%)}
+  .hero-in{flex:0 0 auto;width:var(--w);padding:6px 0 max(22px,3.2svh)}
+  .hero-txt{padding-left:0}
+  .hero-txt::before{display:none}
+  .adres{color:var(--szary);font-size:14px;margin-bottom:10px}
+  .hero h1{font-size:clamp(30px,8.6vw,38px);margin-bottom:12px;max-width:none}
+  .lead{color:var(--szary);font-size:16px;margin-bottom:20px}
+  .hero .btn.jasny{background:var(--czern);color:#fff}
+  .btn{padding:17px 22px;font-size:15px}
+  .lista li{grid-template-columns:minmax(0,1fr);padding:16px 0}
+  .lista b{font-size:18px}
+  .karty{grid-template-columns:minmax(0,1fr);gap:36px}
+  .karta .kar-tor > img{aspect-ratio:16/10}
+  .karta h3{margin-top:16px}
+  .kuchnie .kar{margin-left:16px}
+  .kuchnie .kar-tor{gap:10px;padding-right:16px}
+  .kuchnie .kar-tor figure{width:calc(100vw - 48px)}
+  .kar-dol{padding-right:16px}
+  .strzalki{display:none}
+  .kar-btn{display:none}
+  .marki{grid-template-columns:minmax(0,1fr)}
+  .certy{grid-template-columns:minmax(0,1fr)}
+  .verle-txt .duze{font-size:19px}
+  form{grid-template-columns:minmax(0,1fr)}
+  .mapa{height:320px}
+  .stopka-siatka{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .stopka-siatka > :first-child{grid-column:1/-1}
+  .mob{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--linia);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;transform:translateY(110%);transition:transform .25s}
+  .mob.widac{transform:none}
+  body.menu-otw .mob{transform:translateY(110%)}
+  .mob a{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:14px 10px;border:1px solid var(--czern)}
+  .mob a.gl{background:var(--czern);color:#fff}
+  .mob svg{width:17px;height:17px}
+  .stopka{padding-bottom:90px}
+}
+@media (max-width:760px) and (max-height:700px){
+  .hero h1{font-size:clamp(27px,7.8vw,32px)}
+  .lead{font-size:15px;margin-bottom:16px}
+  .adres{margin-bottom:6px}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="Modern Studio Wnętrz - strona główna">
+      <svg viewBox="0 40 1082 124" role="img" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="9"><path d="M13 98V154M13 50L117 154M141 154V50L78 113"/></g><g fill="currentColor" font-family="Raleway, sans-serif" font-weight="300"><text x="160" y="153" font-size="146" textLength="512" lengthAdjust="spacingAndGlyphs">ODERN</text><text x="716" y="122" font-size="44" textLength="364" lengthAdjust="spacingAndGlyphs">STUDIO WNĘTRZ</text></g></svg>
+    </a>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="#uslugi">Od projektu do montażu</a>
+      <a href="#kuchnie">Kuchnie</a>
+      <a href="#meble">Meble</a>
+      <a href="#verle">Verle Küchen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel" href="tel:+48721721541" aria-label="Zadzwoń: 721 721 541"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>721 721 541</span></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="panel"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="panel" id="panel">
+  <a href="#uslugi">Od projektu do montażu</a>
+  <a href="#kuchnie">Kuchnie</a>
+  <a href="#meble">Meble</a>
+  <a href="#verle">Verle Küchen</a>
+  <a href="#kontakt">Kontakt</a>
+  <a class="btn jasny" href="#kontakt">Umów bezpłatny projekt 3D</a>
+  <p class="pd">ul. Legnicka 69, 59-300 Lubin<br>tel. 721 721 541<br>biuro@modern-studio.pl</p>
+</div>
+
+<main>
+<section class="hero" id="start">
+  <figure class="hero-foto">
+    <img src="img/hero.webp" srcset="img/hero-900.webp 900w, img/hero.webp 1680w" sizes="100vw" alt="Kuchnia z wyspą w szarym dekorze betonu i otwartym regałem" width="1680" height="800" fetchpriority="high">
+  </figure>
+  <div class="hero-in">
+    <div class="hero-txt">
+      <p class="adres">Modern Studio Wnętrz, Lubin, ul. Legnicka 69</p>
+      <h1>Kuchnie na wymiar z niemieckich mebli</h1>
+      <p class="lead">Bezpłatny projekt w 3D, pomiar i montaż własną ekipą. Od pierwszej kreski projektu do gotowej kuchni.</p>
+      <a class="btn jasny" href="#kontakt" id="hero-cta">Umów bezpłatny projekt 3D <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="uslugi">
+  <div class="wrap usluga">
+    <div class="opis">
+      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+      <h2>Od projektu do montażu, w jednym studiu</h2>
+      <p>Specjalizujemy się w meblach kuchennych na wymiar, a w ofercie mamy też meble łazienkowe, salonowe i garderoby. Realizujemy zamówienia według gotowych projektów albo projektujemy kuchnię razem z Tobą od podstaw.</p>
+      <p>Do każdej realizacji podchodzimy indywidualnie, żeby dobrać rozwiązanie najlepsze dla Twojego wnętrza. Przejrzysty język projektowania, charakterystyczny design i funkcjonalność na co dzień.</p>
+    </div>
+    <div>
+      <ul class="lista">
+        <li><b>Bezpłatny projekt w 3D</b><span>Widzisz kuchnię, zanim powstanie: układ, fronty, blat i sprzęty.</span></li>
+        <li><b>Pomiar kuchni</b><span>Mierzymy pomieszczenie, żeby projekt pasował do Twojego wnętrza.</span></li>
+        <li><b>Własna ekipa montażowa</b><span>Meble montuje nasza własna ekipa montażowa.</span></li>
+        <li><b>Gwarancja</b><span>Na meble Verle 5-letnia gwarancja producenta.</span></li>
+        <li><b>Obsługa posprzedażowa</b><span>Po zakończeniu prac zawsze możesz zwrócić się do nas po poradę.</span></li>
+        <li><b>Finansowanie</b><span>Zapytaj w studiu o możliwości finansowania zakupu.</span></li>
+      </ul>
+      <div class="agd-info">
+        <svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2.5" width="18" height="21"/><path d="M4 9h18M8 5.8h3"/><circle cx="13" cy="16" r="4"/></svg>
+        <p><strong>Kuchnia razem ze sprzętem AGD?</strong> Transport, wniesienie, montaż i podłączenie sprzętów AGD dostajesz w cenie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek jasne kuchnie" id="kuchnie">
+  <div class="wrap sek-glowa">
+    <div>
+      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+      <h2>Kuchnia to nie tylko kuchnia, to przestrzeń życiowa</h2>
+    </div>
+    <p>Każdy żyje inaczej i ma inne wymagania. Tradycyjny, nowoczesny, wiejski styl czy połączenie? Pokażemy Ci kuchnie skomponowane według Twoich życzeń i znajdziemy tę, która pasuje do Twojego stylu życia.</p>
+  </div>
+  <div class="kar" data-kar data-licznik>
+    <div class="kar-tor" tabindex="0" aria-label="Galeria kuchni, przesuń w bok">
+      <figure><img src="img/k01.webp" alt="Kuchnia z wyspą w ciemnym dekorze drewna" width="1400" height="842"></figure>
+      <figure><img src="img/k02.webp" alt="Kuchnia z wyspą i kamiennym blatem" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k03.webp" alt="Kuchnia z zielonymi frontami i oknem loftowym" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k04.webp" alt="Biała kuchnia z ciemną ścianą i półkami" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k05.webp" alt="Jasna kuchnia z wyspą i oknem do ogrodu" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k06.webp" alt="Kuchnia z wyspą przy dużych przeszkleniach" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k07.webp" alt="Jasna kuchnia z wyspą i betonowym blatem" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k08.webp" alt="Kuchnia w czerni z jasną wyspą" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k09.webp" alt="Biała kuchnia z wnęką na książki" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k10.webp" alt="Biała kuchnia w stylu klasycznym" width="1400" height="842" loading="lazy"></figure>
+      <figure><img src="img/k11.webp" alt="Kuchnia ze stali i szkła z podświetlaną wyspą" width="1400" height="1002" loading="lazy"></figure>
+      <figure><img src="img/k12.webp" alt="Kuchnia w grafitowych frontach z bordowymi akcentami" width="1400" height="990" loading="lazy"></figure>
+      <figure><img src="img/k13.webp" alt="Kuchnia w dekorze betonu terragrau" width="1400" height="1189" loading="lazy"></figure>
+      <figure><img src="img/k14.webp" alt="Kuchnia z wyspą w drewnie i bieli" width="910" height="590" loading="lazy"></figure>
+    </div>
+    <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+    <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+  </div>
+  <div class="wrap kar-dol">
+    <p><span data-licz-out>1 / 14</span> &nbsp;Przesuń palcem lub przeciągnij myszą</p>
+    <div class="strzalki">
+      <button data-kar-cel="kuchnie" data-kier="-1" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+      <button data-kar-cel="kuchnie" data-kier="1" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="meble">
+  <div class="wrap">
+    <div class="sek-glowa">
+      <div>
+        <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+        <h2>Nie tylko kuchnie</h2>
+      </div>
+      <p>Ten sam projekt, ta sama jakość w całym domu: od przedpokoju i garderoby, przez salon, po łazienkę i pralnię.</p>
+    </div>
+    <div class="karty">
+      <article class="karta">
+        <div class="kar" data-kar data-kropki>
+          <div class="kar-tor" tabindex="0" aria-label="Przedpokój i garderoba, galeria">
+            <img src="img/g1.webp" alt="Garderoba z podświetlanymi półkami" width="900" height="613" loading="lazy">
+            <img src="img/g2.webp" alt="Otwarta garderoba w sypialni" width="900" height="675" loading="lazy">
+            <img src="img/g3.webp" alt="Garderoba z drzwiami przesuwnymi" width="900" height="636" loading="lazy">
+            <img src="img/g4.webp" alt="Przedpokój z szafą i ławką" width="900" height="650" loading="lazy">
+          </div>
+          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        </div>
+        <h3>Przedpokój i garderoba</h3>
+        <p>Wieszaki, szafki na buty, komody i lustra Verle oraz zabudowy z drzwiami przesuwnymi Raumplus, szyte na miarę.</p>
+      </article>
+      <article class="karta">
+        <div class="kar" data-kar data-kropki>
+          <div class="kar-tor" tabindex="0" aria-label="Pokój dzienny, galeria">
+            <img src="img/s1.webp" alt="Salon z zabudową RTV i półkami" width="900" height="636" loading="lazy">
+            <img src="img/s2.webp" alt="Salon z wiszącymi szafkami" width="900" height="636" loading="lazy">
+            <img src="img/s3.webp" alt="Jadalnia i salon z szafkami w drewnie" width="900" height="636" loading="lazy">
+            <img src="img/s4.webp" alt="Salon z zabudową w orzechu" width="900" height="584" loading="lazy">
+          </div>
+          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        </div>
+        <h3>Pokój dzienny</h3>
+        <p>Bogaty wybór frontów i materiałów: barwy, wzory i faktury zestawiasz prawie bez ograniczeń.</p>
+      </article>
+      <article class="karta">
+        <div class="kar" data-kar data-kropki>
+          <div class="kar-tor" tabindex="0" aria-label="Łazienka i pralnia, galeria">
+            <img src="img/l1.webp" alt="Łazienka z szafką pod umywalkę w drewnie" width="900" height="627" loading="lazy">
+            <img src="img/l2.webp" alt="Łazienka z wysokimi szafkami" width="900" height="637" loading="lazy">
+            <img src="img/l3.webp" alt="Łazienka z widokiem do ogrodu" width="900" height="600" loading="lazy">
+            <img src="img/l4.webp" alt="Pralnia z zabudową pralki i suszarki" width="900" height="519" loading="lazy">
+          </div>
+          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        </div>
+        <h3>Łazienka i pralnia</h3>
+        <p>Szafki dopasowane do łazienki każdej wielkości. Nie musi to być klasyczna szafka z umywalką.</p>
+      </article>
+      <article class="karta">
+        <div class="kar" data-kar data-kropki>
+          <div class="kar-tor" tabindex="0" aria-label="Blaty, galeria">
+            <img src="img/b1.webp" alt="Kuchnia z blatem ze spieku kwarcowego" width="900" height="609" loading="lazy">
+            <img src="img/b2.webp" alt="Wyspa z blatem imitującym marmur" width="900" height="601" loading="lazy">
+            <img src="img/b3.webp" alt="Płyta spieku z ciemnym użyleniem" width="900" height="506" loading="lazy">
+          </div>
+          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        </div>
+        <h3>Blaty</h3>
+        <p>Spieki kwarcowe, granity, konglomeraty, Corian, kamień naturalny, laminaty i blaty kompaktowe. Pomożemy dobrać blat odporny i trwały.</p>
+      </article>
+      <article class="karta">
+        <div class="kar" data-kar data-kropki>
+          <div class="kar-tor" tabindex="0" aria-label="Sprzęt AGD, galeria">
+            <img src="img/a1.webp" alt="Kuchnia z piekarnikami w zabudowie" width="720" height="750" loading="lazy">
+            <img src="img/a2.webp" alt="Kuchnia z wyspą i okapem" width="900" height="506" loading="lazy">
+            <img src="img/a3.webp" alt="Okap wyspowy nad blatem" width="900" height="675" loading="lazy">
+          </div>
+          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        </div>
+        <h3>Sprzęt AGD i armatura</h3>
+        <p>Na ekspozycji w studiu sprzęt Siemens z wydłużoną 5-letnią gwarancją bez dopłaty. Sprzęt można też kupić osobno, z transportem i montażem.</p>
+      </article>
+      <article class="karta">
+        <div class="kar" data-kar data-kropki>
+          <div class="kar-tor" tabindex="0" aria-label="Stoły i krzesła, galeria">
+            <img src="img/t1.webp" alt="Jadalnia ze stołem i tapicerowanymi krzesłami" width="900" height="642" loading="lazy">
+            <img src="img/t2.webp" alt="Krzesła tapicerowane przy stole" width="900" height="473" loading="lazy">
+          </div>
+          <button class="kar-btn lewo" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 10H4M9 5l-5 5 5 5"/></svg></button>
+          <button class="kar-btn prawo" aria-label="Następne zdjęcie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        </div>
+        <h3>Stoły i krzesła</h3>
+        <p>Szeroki wybór do jadalni i kuchni. Wystarczy przyjść do studia i wybrać model, który sprawdzi się u Ciebie w domu.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sek verle" id="verle">
+  <div class="verle-in">
+    <figure class="verle-foto"><img src="img/verle.webp" alt="Salon z meblami Verle i otwartymi półkami" width="1400" height="990" loading="lazy"></figure>
+    <div class="verle-txt">
+      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+      <h2>Verle Küchen, made in Germany</h2>
+      <p>Naszym głównym dostawcą mebli jest Verle Küchen. Meble Verle powstają wyłącznie w niemieckich fabrykach, z wysokim stopniem automatyzacji produkcji. To solidność i jakość, ale też wyszukane dekory, z których powstają oryginalne projekty.</p>
+      <p class="duze">5-letnia gwarancja producenta</p>
+      <ul class="certy">
+        <li>DIN EN ISO 50001 (energia)</li>
+        <li>DIN ISO 9001 (jakość)</li>
+        <li>DIN ISO 14001 (środowisko)</li>
+        <li>Złote M, DGM (GS)</li>
+        <li>PEFC</li>
+        <li>Der Blaue Engel</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek jasne" id="marki">
+  <div class="wrap">
+    <div class="sek-glowa">
+      <div>
+        <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+        <h2>Sprzęt i blaty sprawdzonych marek</h2>
+      </div>
+      <p>Jeśli potrzebujesz czegoś spoza podstawowego programu, zwykle i tak możemy to dostarczyć. Po prostu zapytaj.</p>
+    </div>
+    <div class="marki">
+      <div class="marka">
+        <h3>AGD i armatura</h3>
+        <p><strong>Siemens</strong> na ekspozycji w studiu, a także Smeg, Samsung, Miele, Bora, Elica, Beko, Falmec, Faber, Franke, Blanco, Hettich, Peka, Häfele, Blum i inne.</p>
+      </div>
+      <div class="marka">
+        <h3>Blaty</h3>
+        <p>Spieki kwarcowe <strong>Dekton, Laminam, Neolith</strong>, granity Sensa, konglomeraty Silestone i Quarcforms, kompozyt Corian, kamienie naturalne, laminaty i blaty kompaktowe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="kontakt">
+  <div class="wrap kontakt">
+    <div class="dane">
+      <div class="ciecie" aria-hidden="true"><i></i><svg viewBox="0 0 22 22"><path d="M0 .75L21.25 22" stroke="currentColor" stroke-width="1.5"/></svg><i></i></div>
+      <h2>Umów wizytę w studiu, bez zobowiązań</h2>
+      <p style="color:var(--szary);margin-top:20px">Opisz krótko, co chcesz urządzić. Oddzwonimy i umówimy pomiar albo spotkanie przy projekcie 3D.</p>
+      <dl>
+        <dt>Adres</dt><dd>ul. Legnicka 69, 59-300 Lubin</dd>
+        <dt>Telefon</dt><dd><a href="tel:+48721721541">721 721 541</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:biuro@modern-studio.pl">biuro@modern-studio.pl</a></dd>
+        <dt>WhatsApp</dt><dd><a href="https://wa.me/48885343333" rel="noopener">885 343 333</a></dd>
+        <dt>Facebook</dt><dd><a href="https://www.facebook.com/modernstudiownetrz/" rel="noopener">modernstudiownetrz</a></dd>
+      </dl>
+    </div>
+    <form id="formularz" novalidate>
+      <label>Imię<input name="imie" autocomplete="name" placeholder="Jak się do Ciebie zwracać"></label>
+      <label>Telefon<input name="tel" type="tel" autocomplete="tel" placeholder="Numer do kontaktu"></label>
+      <label class="cala">E-mail<input name="email" type="email" autocomplete="email" placeholder="adres@poczta.pl"></label>
+      <label class="cala">Co urządzamy?
+        <select name="co"><option>Kuchnia</option><option>Przedpokój lub garderoba</option><option>Pokój dzienny</option><option>Łazienka lub pralnia</option><option>Blat lub sprzęt AGD</option><option>Inne</option></select>
+      </label>
+      <label class="cala">Wiadomość<textarea name="wiad" placeholder="Wymiary, termin, pomysły. Może być w kilku słowach."></textarea></label>
+      <label class="zgoda"><input type="checkbox" name="zgoda"> <span>Zgadzam się na kontakt w sprawie zapytania. Szczegóły w <a href="polityka.html">polityce prywatności</a>.</span></label>
+      <div class="form-dol">
+        <button class="btn" type="submit">Wyślij zapytanie <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
+        <p class="form-info" id="form-info" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+  <div class="wrap">
+    <div class="mapa"><iframe title="Mapa dojazdu: ul. Legnicka 69, Lubin" src="https://maps.google.com/maps?q=Legnicka%2069,%2059-300%20Lubin&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="stopka-siatka">
+      <div>
+        <a class="logo" href="#start" aria-label="Modern Studio Wnętrz"><svg viewBox="0 40 1082 124" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="9"><path d="M13 98V154M13 50L117 154M141 154V50L78 113"/></g><g fill="currentColor" font-family="Raleway, sans-serif" font-weight="300"><text x="160" y="153" font-size="146" textLength="512" lengthAdjust="spacingAndGlyphs">ODERN</text><text x="716" y="122" font-size="44" textLength="364" lengthAdjust="spacingAndGlyphs">STUDIO WNĘTRZ</text></g></svg></a>
+        <p>Niemieckie meble na wymiar w Lubinie: kuchnie, garderoby, salony i łazienki.</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>ul. Legnicka 69<br>59-300 Lubin</li>
+          <li><a href="tel:+48721721541">721 721 541</a></li>
+          <li><a href="mailto:biuro@modern-studio.pl">biuro@modern-studio.pl</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Na stronie</h4>
+        <ul>
+          <li><a href="#kuchnie">Kuchnie</a></li>
+          <li><a href="#meble">Meble</a></li>
+          <li><a href="#verle">Verle Küchen</a></li>
+          <li><a href="polityka.html">Polityka prywatności</a></li>
+          <li><a href="https://www.facebook.com/modernstudiownetrz/" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stopka-dol">
+      <span>© <span id="rok">2026</span> Modern Studio Wnętrz</span>
+      <span class="pg">Podgląd koncepcji, treści i zdjęcia z modern-studio.pl</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=modern-studio.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<div class="mob" id="mob">
+  <a href="tel:+48721721541"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Zadzwoń</a>
+  <a class="gl" href="#kontakt">Bezpłatny projekt 3D</a>
+</div>
+
+<div class="cookies" id="cookies" hidden role="dialog" aria-label="Pliki cookies">
+  <p>Strona używa niezbędnych plików cookies, a mapa Google może zapisywać własne. Więcej w <a href="polityka.html">polityce prywatności</a>.</p>
+  <div class="pr"><button id="ck-ok">Akceptuję</button><button class="dr" id="ck-min">Tylko niezbędne</button></div>
+</div>
+
+<script>
+(function(){
+  document.getElementById('rok').textContent=new Date().getFullYear();
+  // menu mobilne
+  var b=document.querySelector('.burger'),p=document.getElementById('panel');
+  function zamknij(){p.classList.remove('otw');document.body.classList.remove('menu-otw');b.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+  b.addEventListener('click',function(){var o=!p.classList.contains('otw');p.classList.toggle('otw',o);document.body.classList.toggle('menu-otw',o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',zamknij)});
+  // aktywna pozycja menu
+  var linki=[].slice.call(document.querySelectorAll('.nav a,.panel a[href^="#"]:not(.btn)'));
+  var sek=['uslugi','kuchnie','meble','verle','kontakt'].map(function(i){return document.getElementById(i)});
+  function akt(){var y=innerHeight*0.35,cur=null;sek.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=y&&r.bottom>y)cur=s.id});
+    if(cur==null&&document.getElementById('marki').getBoundingClientRect().top<=y&&document.getElementById('kontakt').getBoundingClientRect().top>y)cur='verle';
+    linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+cur)})}
+  addEventListener('scroll',akt,{passive:true});akt();
+  // pasek mobilny po przewinięciu za przycisk w hero
+  var mob=document.getElementById('mob'),cta=document.getElementById('hero-cta');
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){var r=e[0];mob.classList.toggle('widac',!r.isIntersecting&&r.boundingClientRect.top<0)}).observe(cta)}
+  // karuzele: palec, mysz, strzałki, klawiatura
+  document.querySelectorAll('[data-kar]').forEach(function(k){
+    var t=k.querySelector('.kar-tor'),el=[].slice.call(t.children),n=el.length;
+    var lw=k.querySelector('.kar-btn.lewo'),pr=k.querySelector('.kar-btn.prawo');
+    var out=k.parentNode.querySelector('[data-licz-out]'),kr=null;
+    if(k.hasAttribute('data-kropki')){kr=document.createElement('div');kr.className='kropki';kr.setAttribute('aria-hidden','true');for(var i=0;i<n;i++)kr.appendChild(document.createElement('i'));k.appendChild(kr)}
+    function idx(){var x=t.scrollLeft,best=0,d=1e9;el.forEach(function(e,i){var dd=Math.abs(e.offsetLeft-t.offsetLeft-x);if(dd<d){d=dd;best=i}});if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4)best=n-1;return best}
+    function idz(i){i=Math.max(0,Math.min(n-1,i));t.scrollTo({left:el[i].offsetLeft-t.offsetLeft,behavior:'smooth'})}
+    function odsw(){var i=idx();if(lw)lw.disabled=t.scrollLeft<4;if(pr)pr.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4;
+      if(out)out.textContent=(i+1)+' / '+n;if(kr)[].forEach.call(kr.children,function(c,j){c.classList.toggle('on',j===i)});
+      document.querySelectorAll('[data-kar-cel]').forEach(function(bt){if(k.closest('#'+bt.dataset.karCel)){bt.disabled=bt.dataset.kier<0?t.scrollLeft<4:t.scrollLeft+t.clientWidth>=t.scrollWidth-4}})}
+    if(lw)lw.addEventListener('click',function(){idz(idx()-1)});
+    if(pr)pr.addEventListener('click',function(){idz(idx()+1)});
+    k._idz=function(d){idz(idx()+d)};
+    t.addEventListener('scroll',function(){requestAnimationFrame(odsw)},{passive:true});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();idz(idx()+1)}if(e.key==='ArrowLeft'){e.preventDefault();idz(idx()-1)}});
+    var dn=false,sx=0,sl=0,ruch=0,si=0;
+    t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;sx=e.clientX;sl=t.scrollLeft;ruch=0;si=idx();t.classList.add('ciag')});
+    addEventListener('pointermove',function(e){if(!dn)return;var dx=e.clientX-sx;ruch=Math.max(ruch,Math.abs(dx));t.scrollLeft=sl-dx});
+    addEventListener('pointerup',function(){if(!dn)return;dn=false;t.classList.remove('ciag');if(ruch>30){idz(si+(t.scrollLeft>sl?1:-1))}else{idz(idx())}});
+    t.addEventListener('click',function(e){if(ruch>6){e.preventDefault();e.stopPropagation()}},true);
+    odsw();
+  });
+  document.querySelectorAll('[data-kar-cel]').forEach(function(bt){bt.addEventListener('click',function(){var k=document.querySelector('#'+bt.dataset.karCel+' [data-kar]');k._idz(+bt.dataset.kier)})});
+  // formularz pokazowy
+  document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();document.getElementById('form-info').textContent='To podgląd: formularz nie wysyła danych. Na gotowej stronie zapytanie trafi na biuro@modern-studio.pl.'});
+  // cookies
+  var c=document.getElementById('cookies'),zg=null;try{zg=localStorage.getItem('ms-cookies')}catch(e){}
+  if(!zg)c.hidden=false;
+  function zap(v){try{localStorage.setItem('ms-cookies',v)}catch(e){}c.hidden=true}
+  document.getElementById('ck-ok').onclick=function(){zap('all')};document.getElementById('ck-min').onclick=function(){zap('min')};
+})();
+</script>
+</body>
+</html>
